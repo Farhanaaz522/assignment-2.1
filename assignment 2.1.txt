@@ -1,0 +1,45 @@
+Assignment 2.1
+Q.1 How to import SAS XPORT files into R with the foreign packages?
+
+answer:
+read.xport
+The "read.xport" function reads SAS export formatting files,augmenting 
+the functionality of the read.xport function provided in the foreign package
+with additional features.
+
+Usage: install.packages("foreign")
+       library(foreign)
+       read.xport(file)
+
+
+Q.2 How to import SAS files into R with the Haven package?
+
+answer:
+Haven enables R to read and write various data formats used by other statistical
+packages by wrapping the ReadStat.
+read_sas
+the "read_sas" function supports both "sas7bdat" files and the accompanying sas7bdat
+files that SAS uses to record value labels.Writing values is not currently supported.
+
+Usage: install.packages("haven")
+       library(haven)
+       read_sas(file)
+       write_sas(data,path)
+
+
+Q.3 how to read weka ARFF files in R?
+
+answer:
+read.arff
+the "read.arff" reads data from weka attribute relation file format(ARFF) files.
+
+Usage: read.arff(file)
+
+Q.4 How to read heavy csv/tsv files using readr packages?
+
+answer:
+The readr packages contains functions for reading reading delimited files,lines,the whole file.
+"read_csv" and "read_tsv" are used to read heavy csv and tsv files.
+read_csv():to read a comma.
+read_csv2():to read a semicolon.
+read_tsv():to read a tab.
